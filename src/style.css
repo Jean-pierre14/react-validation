@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "sans-serif" !important;
+}
+
+.container {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+}
+
+.sidebar {
+  position: relative;
+  width: 20%;
+  /* height: 100vh; */
+}
+.main {
+  position: relative;
+  width: 80%;
+}

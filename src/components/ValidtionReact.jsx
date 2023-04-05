@@ -21,7 +21,7 @@ const ValidtionReact = () => {
       name: "username",
       errorMessage:
         "Username is required and it's should be at least 3-5 characters",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      pattern: "^[A-Za-z0-9]{3,16}$", // Pour specifier -- A trouver sur google : js 1 etter 1 number regex code
     },
     {
       id: 2,

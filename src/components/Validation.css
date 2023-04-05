@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #878585;
+}
+
+.formInput {
+  position: relative;
+  max-width: 320px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 0.4rem;
+  background-color: #fff;
+}
+.formInput label {
+  display: block;
+}
+.formInput input {
+  user-select: none;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+.buttonSubmit {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 0.4rem;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  background: rgba(0, 162, 255, 0.618);
+}
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  padding: 3px;
+  display: none;
+}
+input:invalid ~ .errorMessage {
+  display: block;
+}

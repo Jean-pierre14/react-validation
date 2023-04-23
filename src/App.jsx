@@ -1,7 +1,7 @@
 import "./style.css";
 import { useState, useEffect } from "react";
 import RegistrationForm from "./components/RegistrationForm";
-// import ListUsers from "./components/ListUsers";
+import ListUsers from "./components/ListUsers";
 import ValidtionReact from "./components/ValidtionReact";
 
 const App = () => {
@@ -48,7 +48,7 @@ const App = () => {
     <>
       <ValidtionReact />
       <div className="container">
-        {/* <div className="box">
+        <div className="box">
           <form action="#" method="post">
             <input
               type="search"
@@ -59,20 +59,20 @@ const App = () => {
               className="form-control"
             />
           </form>
-        </div> */}
+        </div>
         <div className="box">
-          {/* Users */}
-          {/* <ListUsers users={data} /> */}
+          Users
+          <ListUsers users={data} />
         </div>
       </div>
-      {/* <div className="footer">
+      <div className="footer">
         <button className="button">Add</button>
-      </div> */}
-      {/* <div className="container">
+      </div>
+      <div className="container">
         <div className="box">
           <RegistrationForm />
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

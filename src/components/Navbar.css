@@ -1,0 +1,27 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+  width: 100%;
+  background-color: coral;
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar a.active,
+.navbar .navLinks a.active {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+}
+.navbar .navLinks {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}

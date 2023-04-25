@@ -13,7 +13,7 @@ const RegistrationForm = () => {
   const SubmitFormData = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:7000/add", {
+    fetch("https://racine-node-api-com.onrender.com/student", {
       method: "POST",
       body: JSON.stringify(form),
       headers: {
@@ -21,7 +21,9 @@ const RegistrationForm = () => {
       },
     })
       .then((response) => {
-        console.log(response.json);
+        if (response.ok) {
+          form.reset();
+        }
 
         // call selectAll();
       })

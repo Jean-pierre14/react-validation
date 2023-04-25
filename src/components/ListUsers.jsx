@@ -1,12 +1,10 @@
-import React from "react";
-
 const ListUsers = (props) => {
   return (
     <>
       <div className="list">
-        {props.users.map(({ id, username, email }) => {
+        {props.users.map(({ _id, username, email }) => {
           return (
-            <div className="item" id={id}>
+            <div className="item" key={`${_id}`}>
               <span>{username}</span>
               <span className="date">{email}</span>
             </div>
